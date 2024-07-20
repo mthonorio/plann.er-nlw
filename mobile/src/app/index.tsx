@@ -163,7 +163,6 @@ export default function Index() {
       }
 
       const trip = await tripServer.getById(tripID)
-      console.log(trip)
 
       if (trip) {
         return router.navigate('trip/' + trip.id)
